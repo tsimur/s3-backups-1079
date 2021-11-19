@@ -1,4 +1,4 @@
-# AWS S3 backup script
+# AWS S3 backup script for AWS Lambda
 ## Logic
 
 The script copies data from the entire source bucket
