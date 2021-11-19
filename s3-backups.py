@@ -3,7 +3,7 @@ from datetime import datetime, date
 
 def lambda_handler(event, context):
     src_bucket = '<your source bucket>'
-    dst_bucket = '<your source bucket>'
+    dst_bucket = '<your destination bucket>'
     backup_folder_name = 'backup_' + datetime.now().strftime("%H-%M-%S-") + date.today().strftime("-%d-%m-%Y")
 
     s3 = boto3.client('s3')
