@@ -19,7 +19,13 @@ dst_bucket
 IAM role Lambda functions must have a policy allowing the function read access to the source bucket and write access to the destination bucket.
 
 ### Timeout
-It is necessary to set a limit on the execution of the lambda function that is sufficient to authenticate the copy.
+It is necessary to set the timeout for the lambda function to be sufficient to complete the copy.
+
+```
+lambda function -> configuration -> General configuration -> Edit Timeout
+```
+
+https://stackoverflow.com/questions/62948910/aws-lambda-errormessage-task-timed-out-after-3-00-seconds
 
 
 
