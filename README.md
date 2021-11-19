@@ -1,4 +1,4 @@
-# S3 backup script
+# AWS S3 backup script
 ## Logic
 
 The script copies data from the entire source bucket
