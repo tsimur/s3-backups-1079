@@ -13,6 +13,11 @@ on the destination bucket.
 ```
 dst_bucket
 ```
+Backups older than the number of days specified in
+```
+rotation_period_days
+```
+will be deleted every time the script is executed
 
 ## Recommendations
 ### IAM
